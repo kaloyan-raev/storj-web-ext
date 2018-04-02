@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Storj",
+  "description": "Example web extesions",
+  "version": "0.0.1",
+  "icons": {
+    "16": "images/storj16.png",
+    "48": "images/storj48.png",
+    "128": "images/storj128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "images/storj16.png",
+      "24": "images/storj24.png",
+      "32": "images/storj32.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "webRequest",
+    "<all_urls>"
+  ]
+}
