@@ -30,12 +30,8 @@ func renderStatus(statusText string) {
 }
 
 func main() {
-	env := storj.Env{
-		URL: storj.DefaultURL,
-	}
-
 	// TODO make this call async
-	info, err := storj.GetInfo(env)
+	info, err := storj.GetInfo(storj.NewEnv())
 	if err != nil {
 		renderStatus(fmt.Sprintf("%v", err))
 	} else {
