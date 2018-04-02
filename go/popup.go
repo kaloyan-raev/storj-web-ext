@@ -17,8 +17,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/Storj/go-libstorj/storj"
 	"honnef.co/go/js/dom"
-	"storj.io/storj"
 )
 
 var (
