@@ -30,7 +30,8 @@ func renderStatus(statusText string) {
 }
 
 func main() {
-	// TODO make this call async
+	renderStatus("Loading bridge API info...")
+
 	info, err := storj.GetInfo(storj.NewEnv())
 	if err != nil {
 		renderStatus(fmt.Sprintf("%v", err))
